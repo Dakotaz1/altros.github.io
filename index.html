@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur de Pokémon</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #e6ab09;
+            background-image: url('https://i.pinimg.com/736x/9d/89/a2/9d89a24d864f71aad6da5da9899aca49.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            color: black;
+        }
+        h1 {
+            color: #ffcc00;
+            text-shadow: 3px 3px 6px #3b4cca;
+            font-size: 2.5em;
+        }
+        .conteneur-recherche {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        input {
+            padding: 12px;
+            width: 280px;
+            border: 2px solid #ffcc00;
+            border-radius: 8px;
+            font-size: 1em;
+            text-align: center;
+        }
+        button {
+            padding: 12px 25px;
+            border: none;
+            background-color: #ffcc00;
+            color: black;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: #e6a800;
+            transform: scale(1.1);
+        }
+        .pokemon {
+            margin-top: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            display: inline-block;
+            width: 300px;
+        }
+        .details img {
+            width: 180px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .stats {
+            margin-top: 10px;
+            font-size: 1.1em;
+        }
+        .stats p {
+            font-weight: bold;
+            margin: 5px 0;
+        }
+        #random {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        #random div {
+            background-color: #ffcc00;
+            padding: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        #random div:hover {
+            background-color: #e6a800;
+        }
+        #conteneur-historique {
+            margin-top: 20px;
+        }
+        
+        
+        #liste-historique div:hover {
+            background-color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+    <h1>Générateur de Pokémon</h1>
+    <div class="conteneur-recherche">
+        <input type="text" id="userinput" placeholder="Nom de votre Pokémon en Anglais">
+        <button id="search">rechercher</button>
+    </div>
+    <div id="conteneur-historique">
+        <h2>Historique des recherches</h2>
+        <div id="liste-historique"></div>
+    </div>
+    <div class="pokemon"></div>
+    <div id="random"></div>
+    <script src="script.js"></script>
+</body>
+</html>
