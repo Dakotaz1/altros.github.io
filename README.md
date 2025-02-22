@@ -26,6 +26,6 @@ Explorer les recommandations de Pokémon aléatoires.
 
 Auteur : 
 
-Amine Ben Omrane Étudiant en M2I L3 à École Pratique de Luminy à Marseille.
+Amine Ben Omrane Étudiant en M2I L3 à l'École Pratique.
 
 
