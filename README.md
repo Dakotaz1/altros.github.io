@@ -24,3 +24,5 @@ Utiliser l’historique en cliquant sur un Pokémon pour afficher ses informatio
 
 Explorer les recommandations de Pokémon aléatoires.
 
+Merci.
+
